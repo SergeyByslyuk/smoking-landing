@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoke &amp; Chill — кальянный кейтеринг в Минске | Выездной кальян на мероприятие</title>
+  <meta name="description" content="Кальянный кейтеринг в Минске и области: премиальные кальяны, свой кальянщик, 30+ вкусов. Свадьбы, дни рождения, корпоративы. Рассчитайте стоимость за 1 минуту.">
+  <meta name="theme-color" content="#0e0e11">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Smoke & Chill — кальянный кейтеринг в Минске">
+  <meta property="og:description" content="Премиальные кальяны с выездом на ваше мероприятие. Свой мастер, 30+ вкусов, расчёт стоимости онлайн.">
+  <meta property="og:locale" content="ru_RU">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23f2a33a'/%3E%3Cpath d='M12 22c0-3 2-4 2-7s-2-4-2-6c3 1 5 3 5 6s-2 4-2 7' fill='%230e0e11'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Применяем сохранённую тему до отрисовки, чтобы избежать мигания
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t && window.matchMedia('(prefers-color-scheme: light)').matches) t = 'light';
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="Smoke & Chill — на главную">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="2"/><path d="M13 23c0-3 2.5-4.5 2.5-7.5S13 11 13 8.5c3.5 1.2 6 3.8 6 7s-2.5 4.5-2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <span class="logo__text">Smoke <em>&amp;</em> Chill</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#benefits" class="nav__link">Почему мы</a>
+        <a href="#formats" class="nav__link">Форматы</a>
+        <a href="#calculator" class="nav__link">Калькулятор</a>
+        <a href="#pricing" class="nav__link">Тарифы</a>
+        <a href="#reviews" class="nav__link">Отзывы</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a href="#calculator" class="btn btn--primary btn--sm header__cta">Рассчитать</a>
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="smoke smoke--1"></div>
+        <div class="smoke smoke--2"></div>
+        <div class="smoke smoke--3"></div>
+        <div class="hero__glow"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge reveal">Минск и область · выезд за 2 часа</span>
+          <h1 class="hero__title reveal" style="--i:1">
+            Кальянный кейтеринг<br>
+            <span class="text-gradient">для вашего события</span>
+          </h1>
+          <p class="hero__subtitle reveal" style="--i:2">
+            Премиальный табак, профессиональный кальянщик и безупречный сервис.
+            Мы привезём, подготовим и будем следить за дымом всё мероприятие —
+            вам останется только наслаждаться.
+          </p>
+          <div class="hero__actions reveal" style="--i:3">
+            <a href="#calculator" class="btn btn--primary btn--lg">
+              Рассчитать стоимость
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="https://t.me/smokeandchill" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.47 8.66 20.8c.54 0 .78-.23 1.06-.51l2.55-2.44 5.28 3.87c.97.53 1.65.25 1.91-.89L22.9 4.55c.31-1.42-.51-1.98-1.45-1.63L2.1 10.37c-1.4.54-1.38 1.32-.24 1.68l4.95 1.54L18.3 6.36c.54-.33 1.03-.15.63.18L9.04 15.47Z"/></svg>
+              Написать в Telegram
+            </a>
+          </div>
+          <ul class="hero__stats reveal" style="--i:4">
+            <li><strong data-counter="500">0</strong><span>мероприятий</span></li>
+            <li><strong data-counter="4.9" data-decimals="1">0</strong><span>рейтинг клиентов</span></li>
+            <li><strong data-counter="30" data-suffix="+">0</strong><span>вкусов табака</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal reveal--scale" style="--i:2" aria-hidden="true">
+          <div class="hookah">
+            <svg viewBox="0 0 200 420" fill="none" class="hookah__svg">
+              <defs>
+                <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffd27a"/><stop offset=".5" stop-color="#f2a33a"/><stop offset="1" stop-color="#b8681a"/>
+                </linearGradient>
+                <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#7c5cff" stop-opacity=".55"/><stop offset="1" stop-color="#3a1f8a" stop-opacity=".85"/>
+                </linearGradient>
+              </defs>
+              <!-- bowl -->
+              <path d="M78 22h44l-6 34H84z" fill="url(#gold)"/>
+              <ellipse cx="100" cy="22" rx="24" ry="6" fill="#ffd27a"/>
+              <!-- coals glow -->
+              <circle cx="92" cy="20" r="3" fill="#ff5a1f" class="coal"/><circle cx="104" cy="19" r="3.5" fill="#ff7a2f" class="coal coal--2"/><circle cx="110" cy="22" r="2.5" fill="#ff5a1f" class="coal coal--3"/>
+              <!-- tray -->
+              <ellipse cx="100" cy="66" rx="42" ry="8" fill="url(#gold)"/>
+              <!-- stem -->
+              <rect x="94" y="72" width="12" height="140" rx="6" fill="url(#gold)"/>
+              <rect x="88" y="120" width="24" height="18" rx="6" fill="#ffd27a"/>
+              <rect x="88" y="170" width="24" height="18" rx="6" fill="#ffd27a"/>
+              <!-- base -->
+              <path d="M100 212c-46 0-72 36-72 84 0 42 30 72 72 72s72-30 72-72c0-48-26-84-72-84z" fill="url(#glass)" stroke="#a78bfa" stroke-opacity=".5" stroke-width="2"/>
+              <path d="M100 232c-30 0-52 28-52 64 0 30 22 52 52 52" stroke="#fff" stroke-opacity=".18" stroke-width="6" stroke-linecap="round"/>
+              <!-- hose -->
+              <path d="M112 150c40 0 60 30 60 70s-30 60-60 90" stroke="#2a2a33" stroke-width="10" stroke-linecap="round"/>
+              <path d="M112 150c40 0 60 30 60 70s-30 60-60 90" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 14"/>
+              <!-- bottom -->
+              <ellipse cx="100" cy="372" rx="60" ry="10" fill="#1a1a22" opacity=".6"/>
+            </svg>
+            <div class="hookah__smoke hookah__smoke--1"></div>
+            <div class="hookah__smoke hookah__smoke--2"></div>
+            <div class="hookah__smoke hookah__smoke--3"></div>
+          </div>
+          <div class="hero__card hero__card--1">
+            <span class="hero__card-icon">★</span>
+            <div><strong>4.9 / 5</strong><small>на основе 214 отзывов</small></div>
+          </div>
+          <div class="hero__card hero__card--2">
+            <span class="hero__card-icon">⏱</span>
+            <div><strong>Приедем за 2 часа</strong><small>по Минску — бесплатно</small></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#benefits" class="hero__scroll" aria-label="Прокрутить вниз">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Почему выбирают нас</span>
+          <h2 class="section__title">Кальян, за который <span class="text-gradient">не стыдно</span> перед гостями</h2>
+          <p class="section__desc">Каждая деталь продумана: от подбора табака под формат вечера до одноразовых мундштуков для каждого гостя.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card reveal" style="--i:0">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-1.5 3-5 5-5 9a5 5 0 0 0 10 0c0-4-3.5-6-5-9z"/><path d="M12 22v-5"/></svg></div>
+            <h3>Премиальный табак</h3>
+            <p>Darkside, Musthave, Element, Tangiers — только оригинальные линейки. Более 30 вкусов и авторские миксы под ваш вечер.</p>
+          </article>
+          <article class="card reveal" style="--i:1">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+            <h3>Свой кальянщик</h3>
+            <p>Мастер на площадке весь вечер: меняет угли, следит за дымом, предлагает миксы. Вам не нужно ни о чём думать.</p>
+          </article>
+          <article class="card reveal" style="--i:2">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+            <h3>Гигиена и безопасность</h3>
+            <p>Одноразовые мундштуки, стерилизация после каждого мероприятия, кокосовый уголь без запаха, соблюдение всех норм.</p>
+          </article>
+          <article class="card reveal" style="--i:3">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></div>
+            <h3>Любой формат</h3>
+            <p>Свадьба на 150 гостей или камерный день рождения на 10 — подберём количество кальянов, оформление и сценарий подачи.</p>
+          </article>
+          <article class="card reveal" style="--i:4">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <h3>Выезд куда угодно</h3>
+            <p>Ресторан, загородный дом, лофт, яхта или берег озера. По Минску — бесплатно, за город — по согласованию.</p>
+          </article>
+          <article class="card reveal" style="--i:5">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div>
+            <h3>Официально</h3>
+            <p>Работаем по договору, принимаем оплату по безналу и картой. Закрывающие документы для корпоративных клиентов.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMATS ===== -->
+    <section class="section section--alt" id="formats">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Форматы мероприятий</span>
+          <h2 class="section__title">Подстроимся под <span class="text-gradient">ваш сценарий</span></h2>
+        </div>
+
+        <div class="formats">
+          <article class="format format--wedding reveal" style="--i:0">
+            <div class="format__body">
+              <span class="format__tag">Свадьба</span>
+              <h3>Lounge-зона для гостей</h3>
+              <p>Стильные кальяны в цвет декора, мягкие пуфы и мастер в дресс-коде. Гости отдыхают, пока вы принимаете поздравления.</p>
+            </div>
+          </article>
+          <article class="format format--birthday reveal" style="--i:1">
+            <div class="format__body">
+              <span class="format__tag">День рождения</span>
+              <h3>Авторские миксы под именинника</h3>
+              <p>Соберём вкусовую карту под ваши предпочтения, оформим чашу с фруктами и подадим красиво.</p>
+            </div>
+          </article>
+          <article class="format format--corporate reveal" style="--i:2">
+            <div class="format__body">
+              <span class="format__tag">Корпоратив</span>
+              <h3>Безнал, договор, пунктуальность</h3>
+              <p>Работаем с юрлицами, соблюдаем тайминг мероприятия и дресс-код площадки. Закрывающие документы — в день события.</p>
+            </div>
+          </article>
+          <article class="format format--party reveal" style="--i:3">
+            <div class="format__body">
+              <span class="format__tag">Вечеринка</span>
+              <h3>Плотный дым и яркие вкусы</h3>
+              <p>Крепкие линейки, LED-подсветка колб и быстрая ротация — чтобы дым не заканчивался до утра.</p>
+            </div>
+          </article>
+          <article class="format format--bachelor reveal" style="--i:4">
+            <div class="format__body">
+              <span class="format__tag">Девичник / мальчишник</span>
+              <h3>Камерно и с настроением</h3>
+              <p>Компактный формат на 2–4 кальяна с индивидуальным подходом к каждому гостю.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Как это работает</span>
+          <h2 class="section__title">4 шага до <span class="text-gradient">идеального вечера</span></h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal" style="--i:0">
+            <span class="step__num">01</span>
+            <h3>Заявка</h3>
+            <p>Рассчитываете стоимость на сайте или пишете нам в Telegram. Отвечаем в течение 15 минут.</p>
+          </li>
+          <li class="step reveal" style="--i:1">
+            <span class="step__num">02</span>
+            <h3>Согласование</h3>
+            <p>Уточняем формат, количество гостей, вкусы, площадку и тайминг. Фиксируем всё в договоре.</p>
+          </li>
+          <li class="step reveal" style="--i:2">
+            <span class="step__num">03</span>
+            <h3>Приезд и подготовка</h3>
+            <p>Мастер приезжает за 40–60 минут до начала, разворачивает зону и раскуривает первые кальяны к приходу гостей.</p>
+          </li>
+          <li class="step reveal" style="--i:3">
+            <span class="step__num">04</span>
+            <h3>Сервис весь вечер</h3>
+            <p>Следим за углями, меняем чаши, предлагаем новые миксы. После — убираем за собой, будто нас и не было.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CALCULATOR ===== -->
+    <section class="section section--alt" id="calculator">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Калькулятор стоимости</span>
+          <h2 class="section__title">Узнайте цену <span class="text-gradient">за 1 минуту</span></h2>
+          <p class="section__desc">Ответьте на 5 вопросов — получите предварительный расчёт и персональное предложение.</p>
+        </div>
+
+        <div class="quiz reveal reveal--scale" id="quiz">
+          <div class="quiz__progress" aria-hidden="true">
+            <div class="quiz__progress-bar" id="quizProgress"></div>
+          </div>
+          <div class="quiz__meta">
+            <span class="quiz__step-label">Шаг <span id="quizStepNum">1</span> из <span id="quizStepTotal">5</span></span>
+            <span class="quiz__live-price" id="quizLivePrice" aria-live="polite">от 0 BYN</span>
+          </div>
+
+          <div class="quiz__body">
+            <!-- Step 1: format -->
+            <fieldset class="quiz__step is-active" data-step="1">
+              <legend class="quiz__question">Какое у вас мероприятие?</legend>
+              <div class="choice-grid choice-grid--5">
+                <label class="choice">
+                  <input type="radio" name="format" value="birthday" checked>
+                  <span class="choice__box"><span class="choice__emoji">🎂</span><span class="choice__title">День рождения</span></span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="format" value="wedding">
+                  <span class="choice__box"><span class="choice__emoji">💍</span><span class="choice__title">Свадьба</span></span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="format" value="corporate">
+                  <span class="choice__box"><span class="choice__emoji">💼</span><span class="choice__title">Корпоратив</span></span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="format" value="party">
+                  <span class="choice__box"><span class="choice__emoji">🎉</span><span class="choice__title">Вечеринка</span></span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="format" value="private">
+                  <span class="choice__box"><span class="choice__emoji">🥂</span><span class="choice__title">Частный вечер</span></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Step 2: guests / hookahs -->
+            <fieldset class="quiz__step" data-step="2">
+              <legend class="quiz__question">Сколько будет гостей?</legend>
+              <div class="range-field">
+                <div class="range-field__head">
+                  <label for="guests">Гостей</label>
+                  <output for="guests" id="guestsOut">30</output>
+                </div>
+                <input type="range" id="guests" name="guests" min="5" max="200" step="5" value="30">
+                <div class="range-field__marks"><span>5</span><span>200</span></div>
+              </div>
+              <div class="range-field">
+                <div class="range-field__head">
+                  <label for="hookahs">Кальянов <small>(рекомендуем 1 на 5 гостей)</small></label>
+                  <output for="hookahs" id="hookahsOut">6</output>
+                </div>
+                <input type="range" id="hookahs" name="hookahs" min="1" max="40" step="1" value="6">
+                <div class="range-field__marks"><span>1</span><span>40</span></div>
+              </div>
+            </fieldset>
+
+            <!-- Step 3: duration -->
+            <fieldset class="quiz__step" data-step="3">
+              <legend class="quiz__question">Как долго будет работать кальянщик?</legend>
+              <div class="range-field">
+                <div class="range-field__head">
+                  <label for="hours">Длительность</label>
+                  <output for="hours" id="hoursOut">4 ч</output>
+                </div>
+                <input type="range" id="hours" name="hours" min="3" max="10" step="1" value="4">
+                <div class="range-field__marks"><span>3 ч</span><span>10 ч</span></div>
+              </div>
+              <p class="quiz__hint">Минимальный заказ — 3 часа. Мастер приезжает за час до начала бесплатно.</p>
+            </fieldset>
+
+            <!-- Step 4: tobacco tier -->
+            <fieldset class="quiz__step" data-step="4">
+              <legend class="quiz__question">Какой уровень табака?</legend>
+              <div class="choice-grid choice-grid--3">
+                <label class="choice choice--tier">
+                  <input type="radio" name="tier" value="standard" checked>
+                  <span class="choice__box">
+                    <span class="choice__title">Standard</span>
+                    <span class="choice__price" data-tier-price="standard"></span>
+                    <span class="choice__desc">Musthave, Element, Sebero. Классические вкусы, плотный дым.</span>
+                  </span>
+                </label>
+                <label class="choice choice--tier">
+                  <input type="radio" name="tier" value="premium">
+                  <span class="choice__box">
+                    <span class="choice__badge">Популярно</span>
+                    <span class="choice__title">Premium</span>
+                    <span class="choice__price" data-tier-price="premium"></span>
+                    <span class="choice__desc">Darkside, Tangiers, Satyr. Авторские миксы от нашего мастера.</span>
+                  </span>
+                </label>
+                <label class="choice choice--tier">
+                  <input type="radio" name="tier" value="exclusive">
+                  <span class="choice__box">
+                    <span class="choice__title">Exclusive</span>
+                    <span class="choice__price" data-tier-price="exclusive"></span>
+                    <span class="choice__desc">Лимитированные линейки, фруктовые чаши включены, дизайнерские колбы.</span>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Step 5: extras -->
+            <fieldset class="quiz__step" data-step="5">
+              <legend class="quiz__question">Нужны дополнительные услуги?</legend>
+              <div class="choice-grid choice-grid--2">
+                <label class="choice choice--check">
+                  <input type="checkbox" name="extras" value="fruit">
+                  <span class="choice__box">
+                    <span class="choice__title">Фруктовые чаши</span>
+                    <span class="choice__desc">Грейпфрут, ананас или яблоко — <b data-extra-price="fruit"></b></span>
+                  </span>
+                </label>
+                <label class="choice choice--check">
+                  <input type="checkbox" name="extras" value="lounge">
+                  <span class="choice__box">
+                    <span class="choice__title">Lounge-зона</span>
+                    <span class="choice__desc">Пуфы, столики, подсветка — <b data-extra-price="lounge"></b></span>
+                  </span>
+                </label>
+                <label class="choice choice--check">
+                  <input type="checkbox" name="extras" value="dresscode">
+                  <span class="choice__box">
+                    <span class="choice__title">Мастер в дресс-коде</span>
+                    <span class="choice__desc">Костюм / бабочка под ваше событие — <b data-extra-price="dresscode"></b></span>
+                  </span>
+                </label>
+                <label class="choice choice--check">
+                  <input type="checkbox" name="extras" value="outcity">
+                  <span class="choice__box">
+                    <span class="choice__title">Выезд за Минск</span>
+                    <span class="choice__desc">До 50 км от МКАД — <b data-extra-price="outcity"></b></span>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Result -->
+            <div class="quiz__step quiz__result" data-step="result">
+              <div class="result">
+                <span class="result__label">Предварительная стоимость</span>
+                <div class="result__price" id="resultPrice">—</div>
+                <p class="result__note">Итоговая цена зависит от площадки и пожеланий по вкусам. Зафиксируем после короткого разговора.</p>
+                <ul class="result__summary" id="resultSummary"></ul>
+                <div class="result__actions">
+                  <a href="#contacts" class="btn btn--primary btn--lg" id="resultToForm">Получить точное предложение</a>
+                  <button type="button" class="btn btn--ghost" id="quizRestart">Пересчитать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz__nav" id="quizNav">
+            <button type="button" class="btn btn--ghost" id="quizPrev" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+              Назад
+            </button>
+            <button type="button" class="btn btn--primary" id="quizNext">
+              Далее
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Тарифы</span>
+          <h2 class="section__title">Прозрачные цены <span class="text-gradient">без сюрпризов</span></h2>
+          <p class="section__desc">Стоимость указана за один кальян на всё мероприятие. Работа кальянщика оплачивается отдельно — <span data-master-rate></span>/час.</p>
+        </div>
+
+        <div class="grid grid--3 pricing">
+          <article class="plan reveal" style="--i:0">
+            <h3 class="plan__name">Standard</h3>
+            <div class="plan__price"><span data-tier-price-raw="standard"></span><small>/ кальян</small></div>
+            <p class="plan__desc">Для дружеских встреч и небольших праздников</p>
+            <ul class="plan__list">
+              <li>Табак Musthave, Element, Sebero</li>
+              <li>Классические кальяны из нержавейки</li>
+              <li>Кокосовый уголь без запаха</li>
+              <li>Одноразовые мундштуки</li>
+              <li>Замена чаши каждые 60–90 мин</li>
+            </ul>
+            <a href="#calculator" class="btn btn--ghost btn--block">Рассчитать</a>
+          </article>
+          <article class="plan plan--featured reveal" style="--i:1">
+            <span class="plan__badge">Выбор 70% клиентов</span>
+            <h3 class="plan__name">Premium</h3>
+            <div class="plan__price"><span data-tier-price-raw="premium"></span><small>/ кальян</small></div>
+            <p class="plan__desc">Для свадеб, юбилеев и корпоративов</p>
+            <ul class="plan__list">
+              <li>Табак Darkside, Tangiers, Satyr</li>
+              <li>Дизайнерские кальяны с подсветкой</li>
+              <li>Авторские миксы от мастера</li>
+              <li>Всё из Standard</li>
+              <li>Замена чаши каждые 45–60 мин</li>
+            </ul>
+            <a href="#calculator" class="btn btn--primary btn--block">Рассчитать</a>
+          </article>
+          <article class="plan reveal" style="--i:2">
+            <h3 class="plan__name">Exclusive</h3>
+            <div class="plan__price"><span data-tier-price-raw="exclusive"></span><small>/ кальян</small></div>
+            <p class="plan__desc">Для событий, где важна каждая деталь</p>
+            <ul class="plan__list">
+              <li>Лимитированные линейки табака</li>
+              <li>Фруктовые чаши включены</li>
+              <li>Премиальные колбы ручной работы</li>
+              <li>Всё из Premium</li>
+              <li>Персональный менеджер события</li>
+            </ul>
+            <a href="#calculator" class="btn btn--ghost btn--block">Рассчитать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section class="section section--alt" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">Отзывы</span>
+          <h2 class="section__title">Что говорят <span class="text-gradient">наши гости</span></h2>
+        </div>
+
+        <div class="reviews">
+          <article class="review reveal" style="--i:0">
+            <div class="review__stars" aria-label="5 из 5">★★★★★</div>
+            <p>Заказывали на свадьбу 120 гостей. Ребята приехали заранее, поставили красивую lounge-зону, кальянщик в костюме — гости были в восторге. Ни одного перебоя за 7 часов.</p>
+            <footer><span class="review__avatar">АК</span><div><strong>Анна и Кирилл</strong><small>Свадьба · Минск</small></div></footer>
+          </article>
+          <article class="review reveal" style="--i:1">
+            <div class="review__stars" aria-label="5 из 5">★★★★★</div>
+            <p>Корпоратив на 60 человек, всё чётко по договору и таймингу. Оплата по безналу, документы закрыли в тот же день. Бухгалтерия довольна, коллеги тоже.</p>
+            <footer><span class="review__avatar">ДС</span><div><strong>Дмитрий</strong><small>HR-директор · IT-компания</small></div></footer>
+          </article>
+          <article class="review reveal" style="--i:2">
+            <div class="review__stars" aria-label="5 из 5">★★★★★</div>
+            <p>Брали Premium на день рождения за городом. Мастер подобрал миксы под каждого — даже те, кто «не курит кальян», сидели до конца. Уголь, чаши, всё вовремя.</p>
+            <footer><span class="review__avatar">МВ</span><div><strong>Марина</strong><small>День рождения · Раубичи</small></div></footer>
+          </article>
+          <article class="review reveal" style="--i:3">
+            <div class="review__stars" aria-label="5 из 5">★★★★★</div>
+            <p>Позвонил за 3 часа до вечеринки — приехали, развернулись за 20 минут. Дым плотный, вкусы яркие, уборка после — идеальная. Теперь только к ним.</p>
+            <footer><span class="review__avatar">ЕГ</span><div><strong>Егор</strong><small>Вечеринка · лофт</small></div></footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="section__label">FAQ</span>
+          <h2 class="section__title">Частые <span class="text-gradient">вопросы</span></h2>
+        </div>
+
+        <div class="faq reveal">
+          <details class="faq__item" open>
+            <summary>Сколько кальянов нужно на мероприятие?</summary>
+            <div class="faq__content"><p>Ориентир — один кальян на 4–6 гостей. На свадьбу на 100 человек обычно берут 15–20 кальянов, на день рождения на 20 человек — 4–5. Точное количество подскажем после уточнения формата.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Что входит в стоимость?</summary>
+            <div class="faq__content"><p>Кальяны, табак, уголь на всё время мероприятия, одноразовые мундштуки, доставка по Минску, монтаж и уборка. Отдельно оплачивается работа кальянщика по часам и дополнительные услуги.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Можно ли заказать без кальянщика?</summary>
+            <div class="faq__content"><p>Нет — мастер обязателен для качества и безопасности. Он следит за углями, температурой, меняет чаши и отвечает за противопожарные меры на площадке.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Как далеко вы выезжаете?</summary>
+            <div class="faq__content"><p>По Минску — бесплатно. По Минской области до 50 км от МКАД — фиксированная доплата. Дальше — рассчитываем индивидуально, работаем по всей Беларуси.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Как забронировать дату?</summary>
+            <div class="faq__content"><p>Оставьте заявку на сайте или напишите в Telegram. Бронируем после предоплаты 30%, остаток — в день мероприятия. Для юрлиц — по договору и счёту.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Можно ли курить кальян в помещении?</summary>
+            <div class="faq__content"><p>Зависит от площадки: многие рестораны и лофты имеют специальные зоны. Мы подскажем, как согласовать с администрацией, или организуем комфортную зону на террасе.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTS / FORM ===== -->
+    <section class="section section--alt" id="contacts">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__info reveal">
+            <span class="section__label">Контакты</span>
+            <h2 class="section__title">Оставьте заявку — <span class="text-gradient">ответим за 15 минут</span></h2>
+            <p class="section__desc">Расскажите о событии, и мы подготовим персональное предложение с вкусами, количеством кальянов и точной стоимостью.</p>
+
+            <ul class="contact__list">
+              <li>
+                <span class="contact__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg></span>
+                <div><small>Телефон</small><a href="tel:+375290000000" data-contact-phone>+375 (29) 000-00-00</a></div>
+              </li>
+              <li>
+                <span class="contact__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.47 8.66 20.8c.54 0 .78-.23 1.06-.51l2.55-2.44 5.28 3.87c.97.53 1.65.25 1.91-.89L22.9 4.55c.31-1.42-.51-1.98-1.45-1.63L2.1 10.37c-1.4.54-1.38 1.32-.24 1.68l4.95 1.54L18.3 6.36c.54-.33 1.03-.15.63.18L9.04 15.47Z"/></svg></span>
+                <div><small>Telegram</small><a href="https://t.me/smokeandchill" target="_blank" rel="noopener">@smokeandchill</a></div>
+              </li>
+              <li>
+                <span class="contact__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span>
+                <div><small>Instagram</small><a href="https://instagram.com/smokeandchill" target="_blank" rel="noopener">@smokeandchill</a></div>
+              </li>
+              <li>
+                <span class="contact__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                <div><small>Работаем</small><span>Ежедневно, 10:00 – 23:00</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form reveal reveal--scale" id="leadForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Ваше имя <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required minlength="2">
+                <span class="field__error" data-error-for="name"></span>
+              </div>
+              <div class="field">
+                <label for="phone">Телефон <span aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+375 (__) ___-__-__" autocomplete="tel" inputmode="tel" required>
+                <span class="field__error" data-error-for="phone"></span>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="date">Дата мероприятия</label>
+                <input type="date" id="date" name="date">
+              </div>
+              <div class="field">
+                <label for="messenger">Как связаться</label>
+                <select id="messenger" name="messenger">
+                  <option value="call">Позвонить</option>
+                  <option value="telegram" selected>Telegram</option>
+                  <option value="viber">Viber</option>
+                  <option value="whatsapp">WhatsApp</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="comment">Комментарий</label>
+              <textarea id="comment" name="comment" rows="3" placeholder="Площадка, пожелания по вкусам, особые условия…"></textarea>
+            </div>
+
+            <div class="form__calc" id="formCalcSummary" hidden>
+              <span class="form__calc-label">Ваш расчёт будет приложен к заявке</span>
+              <span class="form__calc-value" id="formCalcValue"></span>
+            </div>
+
+            <!-- honeypot -->
+            <div class="hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+
+            <label class="checkbox">
+              <input type="checkbox" name="consent" id="consent" required>
+              <span class="checkbox__box"></span>
+              <span>Согласен на обработку персональных данных и получение ответа по заявке <span aria-hidden="true">*</span></span>
+            </label>
+            <span class="field__error" data-error-for="consent"></span>
+
+            <button type="submit" class="btn btn--primary btn--lg btn--block" id="submitBtn">
+              <span class="btn__text">Отправить заявку</span>
+              <span class="btn__loader" aria-hidden="true"></span>
+            </button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="#" onclick="return false;">политикой конфиденциальности</a>. Никакого спама — только ответ по вашему запросу.</p>
+
+            <div class="form__status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="2"/><path d="M13 23c0-3 2.5-4.5 2.5-7.5S13 11 13 8.5c3.5 1.2 6 3.8 6 7s-2.5 4.5-2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <span class="logo__text">Smoke <em>&amp;</em> Chill</span>
+      </a>
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <a href="#benefits">Почему мы</a>
+        <a href="#formats">Форматы</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="footer__meta">
+        <p>© <span id="year"></span> Smoke &amp; Chill · Кальянный кейтеринг в Минске</p>
+        <p class="footer__legal">Курение вредит вашему здоровью. Услуги предоставляются только лицам старше 18 лет.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Telegram (mobile) -->
+  <a href="https://t.me/smokeandchill" class="fab" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.47 8.66 20.8c.54 0 .78-.23 1.06-.51l2.55-2.44 5.28 3.87c.97.53 1.65.25 1.91-.89L22.9 4.55c.31-1.42-.51-1.98-1.45-1.63L2.1 10.37c-1.4.54-1.38 1.32-.24 1.68l4.95 1.54L18.3 6.36c.54-.33 1.03-.15.63.18L9.04 15.47Z"/></svg>
+  </a>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Наверх">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
