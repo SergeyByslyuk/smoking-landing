@@ -53,3 +53,137 @@ body{font-size:17px;line-height:1.65}
   .faq-list details p{font-size:15px}
   .mobile-bar a{font-size:13px}
 }
+
+.hero-image{overflow:hidden;isolation:isolate}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0;filter:saturate(.78) contrast(1.05);transition:opacity .35s}
+.hero-image:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,8,.08) 0%,rgba(10,10,8,.08) 36%,rgba(10,10,8,.72) 100%);z-index:1;pointer-events:none}
+.hero-image.is-fallback .hero-video{opacity:0}
+@media(max-width:700px){.hero-video{object-position:center}}
+@media(prefers-reduced-motion:reduce){.hero-video{display:none}.hero-image:after{display:none}}
+
+/* Full-bleed hero video: atmosphere first, copy stays in a quiet readable zone. */
+.hero{display:block;position:relative;isolation:isolate;min-height:650px;padding-top:150px;padding-bottom:110px;background:#11110f url('https://images.unsplash.com/photo-1519671282427-4a0f0b6b7e2b?auto=format&fit=crop&w=1600&q=85') center/cover no-repeat}
+.hero-background-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:saturate(.58) brightness(.55);transform:scale(1.01)}
+.hero.is-fallback .hero-background-video{display:none}
+.hero:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,8,7,.92) 0%,rgba(8,8,7,.76) 40%,rgba(8,8,7,.5) 72%,rgba(8,8,7,.62) 100%),linear-gradient(0deg,rgba(8,8,7,.68),transparent 50%)}
+.hero-copy{position:relative;z-index:1;max-width:650px}
+.hero-background-video + .hero-copy .hero-lead{max-width:550px}
+@media(max-width:700px){.hero{min-height:760px;padding-top:78px;padding-bottom:78px}.hero:before{background:linear-gradient(90deg,rgba(8,8,7,.88),rgba(8,8,7,.7)),linear-gradient(0deg,rgba(8,8,7,.86),rgba(8,8,7,.22) 70%,rgba(8,8,7,.7))}.hero-background-video{filter:saturate(.5) brightness(.45)}}
+@media(prefers-reduced-motion:reduce){.hero-background-video{display:none}}
+
+/* Final type scale: small copy remains comfortably readable at a glance. */
+body{font-size:18px;line-height:1.7}
+.brand{font-size:11px}
+.desktop-nav a,.header-contact{font-size:14px}
+.header-contact a{font-size:15px}
+.eyebrow{font-size:13px}
+.hero-lead{font-size:19px;line-height:1.72}
+.button{font-size:15px}
+.hero-note{font-size:14px}
+.trust-strip span{font-size:14px}
+.section-heading>p:last-child{font-size:17px}
+.quiz-progress,.progress-label{font-size:12px}
+.quiz-step h3{font-size:30px}
+.choice span{font-size:16px;padding:18px}
+.choice small{font-size:13px}
+.range-labels{font-size:13px}
+.field-label{font-size:13px}
+.text-input{font-size:18px}
+.package-tag{font-size:12px}
+.package-card p{font-size:15px}
+.package-card li{font-size:14px;padding:11px 0}
+.text-link{font-size:13px}
+.service-copy>p:nth-of-type(2){font-size:18px}
+.service-list span{font-size:15px}
+.safety-grid p{font-size:15px}
+.review-grid blockquote p{font-size:19px}
+.review-grid footer b,.review-grid footer small{font-size:13px}
+.faq-list summary{font-size:18px}
+.faq-list details p{font-size:16px}
+.final-cta>div:first-child>p:nth-of-type(2){font-size:17px}
+.footer-top p{font-size:15px}
+.footer-links{font-size:14px}
+
+@media(max-width:700px){
+  body{font-size:17px;line-height:1.7}
+  .brand{font-size:10px}
+  .hero-lead{font-size:18px;line-height:1.72}
+  .hero-note{font-size:13px}
+  .trust-strip span{font-size:13px}
+  .section-heading>p:last-child{font-size:17px}
+  .quiz-progress,.progress-label{font-size:12px}
+  .quiz-step h3{font-size:27px}
+  .choice span{font-size:17px;padding:16px}
+  .choice small{font-size:13px}
+  .range-labels{font-size:13px}
+  .package-tag{font-size:12px}
+  .package-card p{font-size:16px;line-height:1.65}
+  .package-card li{font-size:15px}
+  .text-link{font-size:13px}
+  .service-copy>p:nth-of-type(2){font-size:18px}
+  .service-list span{font-size:15px}
+  .safety-grid p{font-size:16px}
+  .review-grid blockquote p{font-size:18px}
+  .faq-list summary{font-size:17px}
+  .faq-list details p{font-size:16px}
+  .mobile-bar a{font-size:14px}
+  .footer-top p{font-size:15px}
+}
+
+/* Last readability increase requested by the client. */
+body{font-size:21px}
+html,body{overflow-x:hidden}
+.desktop-nav a,.header-contact{font-size:17px}
+.header-contact a{font-size:18px}
+.eyebrow{font-size:16px}
+.hero-lead{font-size:22px}
+.button{font-size:18px}
+.hero-note{font-size:17px}
+.trust-strip span{font-size:17px}
+.section-heading>p:last-child{font-size:20px}
+.quiz-progress,.progress-label{font-size:15px}
+.quiz-step h3{font-size:33px}
+.choice span{font-size:19px}
+.choice small{font-size:16px}
+.range-labels{font-size:16px}
+.field-label{font-size:16px}
+.text-input{font-size:21px}
+.package-tag{font-size:15px}
+.package-card p{font-size:18px}
+.package-card li{font-size:17px}
+.text-link{font-size:16px}
+.service-copy>p:nth-of-type(2){font-size:21px}
+.service-list span{font-size:18px}
+.safety-grid p{font-size:18px}
+.review-grid blockquote p{font-size:22px}
+.review-grid footer b,.review-grid footer small{font-size:16px}
+.faq-list summary{font-size:21px}
+.faq-list details p{font-size:19px}
+.final-cta>div:first-child>p:nth-of-type(2){font-size:20px}
+.footer-top p{font-size:18px}
+.footer-links{font-size:17px}
+
+@media(max-width:700px){
+  body{font-size:20px}
+  .hero-lead{font-size:21px}
+  .hero-note{font-size:16px}
+  .trust-strip span{font-size:16px}
+  .section-heading>p:last-child{font-size:19px}
+  .quiz-progress,.progress-label{font-size:14px}
+  .quiz-step h3{font-size:30px}
+  .choice span{font-size:20px}
+  .choice small{font-size:16px}
+  .range-labels{font-size:16px}
+  .package-tag{font-size:15px}
+  .package-card p{font-size:19px}
+  .package-card li{font-size:18px}
+  .text-link{font-size:16px}
+  .service-copy>p:nth-of-type(2){font-size:20px}
+  .service-list span{font-size:18px}
+  .safety-grid p{font-size:19px}
+  .review-grid blockquote p{font-size:21px}
+  .faq-list summary{font-size:20px}
+  .faq-list details p{font-size:19px}
+  .mobile-bar a{font-size:17px}
+  .footer-top p{font-size:18px}
+}

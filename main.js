@@ -1,4 +1,14 @@
 (() => {
+  const heroVideo = document.querySelector('.hero-background-video');
+  const heroImage = document.querySelector('.hero');
+
+  if (heroVideo && heroImage) {
+    const showFallback = () => heroImage.classList.add('is-fallback');
+    heroVideo.addEventListener('error', showFallback);
+    heroVideo.addEventListener('stalled', showFallback);
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) heroVideo.pause();
+  }
+
   const steps = [...document.querySelectorAll('.quiz-step')];
   const nextButton = document.querySelector('#quiz-next');
   const backButton = document.querySelector('#quiz-back');
