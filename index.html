@@ -67,11 +67,12 @@
   <main>
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
-      <div class="hero__bg" aria-hidden="true">
-        <div class="smoke smoke--1"></div>
-        <div class="smoke smoke--2"></div>
-        <div class="smoke smoke--3"></div>
-        <div class="hero__glow"></div>
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/hero-hookah-poster.jpg">
+          <source src="assets/hero-hookah.webm" type="video/webm">
+          <source src="assets/hero-hookah.mp4" type="video/mp4">
+        </video>
+        <div class="hero__media-overlay"></div>
       </div>
 
       <div class="container hero__inner">
@@ -103,50 +104,6 @@
           </ul>
         </div>
 
-        <div class="hero__visual reveal reveal--scale" style="--i:2" aria-hidden="true">
-          <div class="hookah">
-            <svg viewBox="0 0 200 420" fill="none" class="hookah__svg">
-              <defs>
-                <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#ffd27a"/><stop offset=".5" stop-color="#f2a33a"/><stop offset="1" stop-color="#b8681a"/>
-                </linearGradient>
-                <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#7c5cff" stop-opacity=".55"/><stop offset="1" stop-color="#3a1f8a" stop-opacity=".85"/>
-                </linearGradient>
-              </defs>
-              <!-- bowl -->
-              <path d="M78 22h44l-6 34H84z" fill="url(#gold)"/>
-              <ellipse cx="100" cy="22" rx="24" ry="6" fill="#ffd27a"/>
-              <!-- coals glow -->
-              <circle cx="92" cy="20" r="3" fill="#ff5a1f" class="coal"/><circle cx="104" cy="19" r="3.5" fill="#ff7a2f" class="coal coal--2"/><circle cx="110" cy="22" r="2.5" fill="#ff5a1f" class="coal coal--3"/>
-              <!-- tray -->
-              <ellipse cx="100" cy="66" rx="42" ry="8" fill="url(#gold)"/>
-              <!-- stem -->
-              <rect x="94" y="72" width="12" height="140" rx="6" fill="url(#gold)"/>
-              <rect x="88" y="120" width="24" height="18" rx="6" fill="#ffd27a"/>
-              <rect x="88" y="170" width="24" height="18" rx="6" fill="#ffd27a"/>
-              <!-- base -->
-              <path d="M100 212c-46 0-72 36-72 84 0 42 30 72 72 72s72-30 72-72c0-48-26-84-72-84z" fill="url(#glass)" stroke="#a78bfa" stroke-opacity=".5" stroke-width="2"/>
-              <path d="M100 232c-30 0-52 28-52 64 0 30 22 52 52 52" stroke="#fff" stroke-opacity=".18" stroke-width="6" stroke-linecap="round"/>
-              <!-- hose -->
-              <path d="M112 150c40 0 60 30 60 70s-30 60-60 90" stroke="#2a2a33" stroke-width="10" stroke-linecap="round"/>
-              <path d="M112 150c40 0 60 30 60 70s-30 60-60 90" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 14"/>
-              <!-- bottom -->
-              <ellipse cx="100" cy="372" rx="60" ry="10" fill="#1a1a22" opacity=".6"/>
-            </svg>
-            <div class="hookah__smoke hookah__smoke--1"></div>
-            <div class="hookah__smoke hookah__smoke--2"></div>
-            <div class="hookah__smoke hookah__smoke--3"></div>
-          </div>
-          <div class="hero__card hero__card--1">
-            <span class="hero__card-icon">★</span>
-            <div><strong>4.9 / 5</strong><small>на основе 214 отзывов</small></div>
-          </div>
-          <div class="hero__card hero__card--2">
-            <span class="hero__card-icon">⏱</span>
-            <div><strong>Приедем за 2 часа</strong><small>по Минску — бесплатно</small></div>
-          </div>
-        </div>
       </div>
 
       <a href="#benefits" class="hero__scroll" aria-label="Прокрутить вниз">
