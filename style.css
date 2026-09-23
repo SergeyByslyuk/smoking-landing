@@ -133,6 +133,12 @@ body{font-size:18px;line-height:1.7}
 /* Last readability increase requested by the client. */
 body{font-size:21px}
 html,body{overflow-x:hidden}
+.brand{gap:14px;font-size:15px;line-height:1.08;letter-spacing:.1em}
+.brand-mark{width:48px;height:48px;gap:4px}
+.brand-mark span{width:11px}
+.brand-mark span:nth-child(1){height:27px}
+.brand-mark span:nth-child(2){height:45px}
+.brand-mark span:nth-child(3){height:35px}
 .desktop-nav a,.header-contact{font-size:17px}
 .header-contact a{font-size:18px}
 .eyebrow{font-size:16px}
@@ -165,6 +171,12 @@ html,body{overflow-x:hidden}
 
 @media(max-width:700px){
   body{font-size:20px}
+  .brand{gap:11px;font-size:13px}
+  .brand-mark{width:43px;height:43px;gap:3px}
+  .brand-mark span{width:10px}
+  .brand-mark span:nth-child(1){height:24px}
+  .brand-mark span:nth-child(2){height:40px}
+  .brand-mark span:nth-child(3){height:31px}
   .hero-lead{font-size:21px}
   .hero-note{font-size:16px}
   .trust-strip span{font-size:16px}
